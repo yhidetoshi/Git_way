@@ -102,5 +102,17 @@ git reset --hard <id>
 ```
 git reset --hard <ref_id>
 ```
+#### コンフリクト(競合)を解消
 
+git merge --no-ff fix-B
+```
+[コンフリクトエラー]
+Auto-merging hello_world.php
+CONFLICT (content): Merge conflict in hello_world.php
+Automatic merge failed; fix conflicts and then commit the result.
+```
+→ dev-Aブランチからmasterへコミットし, mergeしてfix-Bブランチしたのでコンフリクが発生
+コンフリクが発生したファイルを開くと [=====]で上下に分けられている。
+===より上の部分が現在の状態、下のの部分が今回マージしようとしている内容
 
+→ どちらかを削除して git add, git commitするとマージに成功する
