@@ -12,11 +12,6 @@ git add hello_world.php
 git commit -m "add file"
 ```
 
-  - gitログを確認
-```
-git log
-```
-
   - リポジトリを初期化
 ```
 git init
@@ -27,6 +22,10 @@ git init
 git status
 ```
 
+  - コミットログを確認(要約も可能)
+```
+git log
+git log --pretty=short
+```
 
-
-
+    
