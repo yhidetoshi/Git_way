@@ -70,4 +70,9 @@ git checkout -b dev-A
 ```
 git checkout master
 ```
+  - 1つ前のブランチに切り替える
+```
+git checkout -
+```
+
 
