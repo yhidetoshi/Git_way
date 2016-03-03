@@ -22,7 +22,7 @@ git init
 git status
 ```
 
-#### Commit log
+#### Git log コミットログの確認
   - コミットログの表示
 ```
 git log
@@ -38,4 +38,19 @@ git log --pretty=short
 git log <file_name>
 ```
 
-    
+  - コミットの差分表示
+```
+git log -p <file_name>
+```
+
+#### Git diff 変更差分の確認
+  - ワークツリーとステージ領域の差分確認
+```
+git diff
+```
+  - ワークツリーと最新コミットの差分を確認
+```
+git diff HEAD
+```
+
+
