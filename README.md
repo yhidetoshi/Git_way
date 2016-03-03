@@ -132,3 +132,19 @@ git commit -m "first commit"
 git remote add origin git@github.com:<user_name>/<repo_name>.git
 git push -u origin master
 ```
+  - master以外のブランチ(dev-D)でpush
+```
+git checkout -b dev-D
+git push origin dev-D
+```
+  
+#### git clone リモートリポジトリから取得
+```
+git clone URL
+```
+→ git cloneで取得した直後だとブランチはmaster
+
+→ git cloneで取得し, 新たにgit checkoutで新しいブランチをきり,そのブランチで実装してpushするのが
+開発の方法。
+
+  
