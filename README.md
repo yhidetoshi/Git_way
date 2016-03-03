@@ -147,4 +147,8 @@ git clone URL
 → git cloneで取得し, 新たにgit checkoutで新しいブランチをきり,そのブランチで実装してpushするのが
 開発の方法。
 
-  
+#### Pull Request
+  1. Forkする
+  2. git clone <forkした方のURL>
+  3. git checkout -b <new_branch>
+  4. git push origin <added new branch>
