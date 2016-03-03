@@ -123,5 +123,12 @@ git commit --amend
 ```
 
 #### git remote add リモートリポジトリを登録
-
-
+  - リモートリポジトリのmasterブランチへ送信
+```
+echo "# Git_way_check" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin git@github.com:<user_name>/<repo_name>.git
+git push -u origin master
+```
