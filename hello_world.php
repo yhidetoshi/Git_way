@@ -1,4 +1,6 @@
 <?php
-   echo "hello world!";
-   echo "hello_world hoge1";
+/*
+	fix-B
+*/
+>>>>>>> fix-B
 ?>
