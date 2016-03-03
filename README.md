@@ -89,5 +89,18 @@ git checkout -
   2. git merge --no-ff dev-A(統合元のブランチ)
 
 #### git log --graph ブランチを視覚的に確認する
+  - git log --graph
+
+#### コミット変更する操作
+  - git reset 歴史を戻る
+```
+git reset --hard <id>
+→ <id>はgit logで確認
+```
+  - git reflog Gitコマンドで行われた変更のログを確認(commit, checkout, reset, mergeなど)
+  - masterブランチに切り替えてから実施
+```
+git reset --hard <ref_id>
+```
 
 
