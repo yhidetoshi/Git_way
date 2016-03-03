@@ -116,3 +116,12 @@ Automatic merge failed; fix conflicts and then commit the result.
 ===より上の部分が現在の状態、下のの部分が今回マージしようとしている内容
 
 → どちらかを削除して git add, git commitするとマージに成功する
+
+  - コミットメッセージを修正(直前のコミットメッセージを修正する)
+```
+git commit --amend
+```
+
+#### git remote add リモートリポジトリを登録
+
+
