@@ -152,3 +152,11 @@ git clone URL
   2. git clone <forkした方のURL>
   3. git checkout -b <new_branch>
   4. git push origin <added new branch>
+
+
+### githubでいつもと違うPCからpushする場合
+```
+# git remote set-url origin https://<account_name>@github.com/<account_name>/<repo_name>.git
+# git push -u origin master
+-> パスワードを入力
+```
