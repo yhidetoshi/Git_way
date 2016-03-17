@@ -160,3 +160,14 @@ git clone URL
 # git push -u origin master
 -> パスワードを入力
 ```
+
+### rejected/non-fast-forwardが出た場合
+(error_message)! [rejected]        master -> master (non-fast-forward)
+```
+[対策1]
+# git pull
+
+[対策2]
+# git fetch
+# git merge origin/master
+```
