@@ -172,3 +172,15 @@ git clone URL
 # git fetch
 # git merge origin/master
 ```
+
+### Gtk-WARNING **: cannot open display:とエラーの時
+```
+# git pull
+(gnome-ssh-askpass:11826): Gtk-WARNING **: cannot open display: 
+
+# echo $SSH_ASKPASS
+/usr/libexec/openssh/gnome-ssh-askpass
+
+# unset SSH_ASKPASS
+# git pull
+```
