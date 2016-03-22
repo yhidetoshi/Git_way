@@ -87,6 +87,7 @@ git checkout -
 
 #### git merge ブランチをマージ
   1. 統合元のブランチからmaster(統合先)ブランチに切り替え
+  　 ->マージ先のブランチに変更してから  `git merge <hoge-A(マージするブランチ)>`
   2. git merge --no-ff dev-A(統合元のブランチ)
 
 #### git log --graph ブランチを視覚的に確認する
@@ -185,3 +186,37 @@ git clone URL
 # unset SSH_ASKPASS
 # git pull
 ```
+
+### git fetchとpullについて
+- feth
+  - リモートリポジトリの最新の履歴の取得だけを行う。取得したコミットは、名前の無いブランチとして取り込まれる
+  - このブランチはFETCH_HEADという名前でチェックアウトすることができる
+```
+# git branch                           
+* master
+
+# git checkout FETCH_HEAD
+-> リモートの変更分がこの(FETCH_HEAD)ブランチで変更されている
+
+# git branch                           
+* (HEAD detached at FETCH_HEAD)
+  master
+
+->次にmasterブランチにmergeする
+
+# git checkout master
+
+git branch                           
+* master
+
+# git merge FETCH_HEAD                 
+Updating 7a0a6e2..3921d78
+Fast-forward
+ CentOS6_x/Command/README.md | 1 +
+ 1 file changed, 1 insertion(+)
+
+ -> リモートリポジトリで変更されたリポジトリがローカルにも反映された
+```
+
+- pull
+  - `git fetch` と `git merge`を一気にやる   
