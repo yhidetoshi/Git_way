@@ -221,4 +221,4 @@ Fast-forward
 ```
 
 - pull
-  - `git fetch` と `git merge`を一気にやる   
+  - `git fetch` と `git merge`を一気にやるもの  
