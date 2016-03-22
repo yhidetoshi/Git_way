@@ -87,7 +87,9 @@ git checkout -
 
 #### git merge ブランチをマージ
   1. 統合元のブランチからmaster(統合先)ブランチに切り替え
+  
   　 ->マージ先のブランチに変更してから  `git merge <hoge-A(マージするブランチ)>`
+  
   2. git merge --no-ff dev-A(統合元のブランチ)
 
 #### git log --graph ブランチを視覚的に確認する
