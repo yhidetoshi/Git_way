@@ -188,6 +188,13 @@ git clone URL
 # unset SSH_ASKPASS
 # git pull
 ```
+#### error: The requested URL returned error: 403 Forbidden while accessing と怒られた時
+```
+$ git remote set-url origin https://<user_name>@github.com/<user_name>/<repo_name>.git
+$ git config --list
+-> 再度、git pushする
+```
+
 
 ### git fetchとpullについて
 - feth
