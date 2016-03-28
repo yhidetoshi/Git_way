@@ -231,6 +231,7 @@ Fast-forward
   - `git fetch` と `git merge`を一気にやるもの  
 
 - **master以外のブランチで作業している時**
+- 
 (例)master以外のdevブランチで作業している時
 devブランチでmasterの更新版を反映したい時
 ```
