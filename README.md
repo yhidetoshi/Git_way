@@ -229,3 +229,16 @@ Fast-forward
 
 - pull
   - `git fetch` と `git merge`を一気にやるもの  
+
+- **master以外のブランチで作業している時**
+(例)master以外のdevブランチで作業している時
+devブランチでmasterの更新版を反映したい時
+```
+$ git pull origin master                              
+From github.com:yhidetoshi/chef_mac
+ * branch            master     -> FETCH_HEAD
+Updating 4321a7a..c9386ef
+Fast-forward
+ README.md | 16 ++++++++++++++++
+ 1 file changed, 16 insertions(+)
+```
