@@ -1,5 +1,7 @@
 ## Gitの使い方をまとめる
 
+![Alt Text](https://github.com/yhidetoshi/Pictures/raw/master/Git_way/git-icon.png)
+
 #### 名前とメールアドレスを設定/確認
 ```
 $ git config --global user.name "Firstname Lastname"
