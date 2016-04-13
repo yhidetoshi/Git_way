@@ -196,6 +196,11 @@ $ git remote set-url origin https://<user_name>@github.com/<user_name>/<repo_nam
 $ git config --list
 -> 再度、git pushする
 ```
+#### error: fatal: multiple stage entries for merged file <file_name>
+```
+$ rm .git/index
+-> git add/git commitする
+```
 
 
 ### git fetchとpullについて
