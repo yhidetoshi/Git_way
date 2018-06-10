@@ -250,3 +250,31 @@ Fast-forward
  README.md | 16 ++++++++++++++++
  1 file changed, 16 insertions(+)
 ```
+
+## GitHubのREADNE.mdに目次(TOC)を入れる方法
+
+- 参考: https://tsunokawa.hatenablog.com/entry/2016/04/21/144537
+- install: `$ npm install -g doctoc`
+- 目次を入れるコマンド: `$ doctoc README.md --github`
+
+- Markdownファイルサンプル
+```
+# test
+
+## test1
+### test1-1
+hoge
+
+### test1-2
+moge
+
+## test2
+### test2-2
+fuga
+```
+
+- 目次を入れたい箇所に以下を追記します。
+```
+<!-- START doctoc -->
+<!-- END doctoc -->
+```
